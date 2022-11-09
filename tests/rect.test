@@ -1,0 +1,17 @@
+import { getRectangleArea, getRectangleInfo, getRectanglePerimeter } from "../js/rectangle";
+
+test('should show the correct rectangle perimeter', () => {
+    const rectanglePerimeter = getRectanglePerimeter(6,9);
+    expect(rectanglePerimeter).toBe(30);
+})
+
+test('should show the correct rectangle area', () => {
+    const rectangleArea = getRectangleArea(6,9);
+    expect(rectangleArea).toBe(54);
+})
+
+test('should show the correct rectanfle Info', () => {
+    const rectangleInfo = getRectangleInfo(6,9);
+    const perOut = (`The perimeter of a rectangle is ${30} and the area is ${54}`);
+    expect(perOut).toBe(`The perimeter of a rectangle is ${30} and the area is ${54}`);
+})
